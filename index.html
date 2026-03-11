@@ -7,112 +7,25 @@
 </head>
 <body id="buddy">
     <div id="teams">
-    <div class="team-blue">
-        <h2>Équipe Hitler</h2><br>
-        <p id="name1">Adolf Hitler</p>
-        <p id="name2">Sébastien Toussignant</p>
-        <p id="name3">Gordon Ramsay</p><br><br>
+    <div class="team-red">
+        <h2>Équipe Stalin</h2><br>
+        <p id="name4">Aymeric</p>
+        <p id="name5">Olivia</p>
+        <p id="name6">Toussignant</p><br><br>
     </div>
+    
     <div>
         <br><br><br><h3>VS</h3>
     </div>
-    <div class="team-red">
-        <h2>Équipe Stalin</h2><br>
-        <p id="name4">Joseph Stalin</p>
-        <p id="name5">Hellen Keller</p>
-        <p id="name6">Barack Obama</p><br><br>
+    <div class="team-blue">
+        <h2>Équipe Hitler</h2><br>
+        <p id="name1">Arthur</p>
+        <p id="name2">Arnaud</p>
+        <p id="name3">Sandra</p><br><br>
     </div>
     </div>
     <div id="board-and-scores">
-        <div class="team-blue" id="blue-info">
-            <h2 id="blue-cells">Pretzels : 0</h2>
-            <h2 id="blue-bingos">Camps de Concentration : 0</h2>
-            <br>
-            <div class="bingo-images1">
-                <img src="./lockedBingo.png" height="150px" width="150px" class="bingo-image" id="blue-leader1">
-                <img src="./lockedBingo.png" height="150px" width="150px" class="bingo-image" id="blue-leader2">
-                <img src="./lockedBingo.png" height="150px" width="150px" class="bingo-image" id="blue-leader3">
-                </div>
-                <div class="bingo-images2">
-                <img src="./lockedBingo.png" height="200px" width="200px" class="bingo-image" id="blue-leader4">
-                <img src="./lockedBingo.png" height="200px" width="200px" class="bingo-image" id="blue-leader5">
-            </div>
-            <h1 id="objective-blue">Gagnez en obtenant 5 leaders</h1>
-            <p id="explain-objective-blue">Vous obtenez 1 leader chaque fois que vous alignez 3 cases en ligne (chaque fois que vous avez un bingo)</p>
-            <div class="bingo-images2">
-                <div id="blue-territory1">
-                <img src="./tieBreaker1.png" height="100px" width="100px" class="bingo-image">
-                </div>
-                <div id="blue-territory2">
-                <img src="./tieBreaker2.png" height="100px" width="100px" class="bingo-image">
-                </div>
-            </div>
-        </div>
-        <table id="bingo-board" oncontextmenu="return false;">
-        <tr id="row1" class="bingo-row">
-            <td id="cell11" class="incomplete" oncontextmenu="setToRed(1,1)" onclick="setToBlue(1,1)">Défi 1</td>
-            <td id="cell12" class="incomplete" oncontextmenu="setToRed(1,2)" onclick="setToBlue(1,2)">Défi 2</td>
-            <td id="cell13" class="incomplete" oncontextmenu="setToRed(1,3)" onclick="setToBlue(1,3)">Défi 3</td>
-            <td id="cell14" class="incomplete" oncontextmenu="setToRed(1,4)" onclick="setToBlue(1,4)">Défi 4</td>
-            <td id="cell15" class="incomplete" oncontextmenu="setToRed(1,5)" onclick="setToBlue(1,5)">Défi 5</td>
-            <td id="cell16" class="incomplete" oncontextmenu="setToRed(1,6)" onclick="setToBlue(1,6)">Défi 6</td>
-            <td id="cell17" class="incomplete" oncontextmenu="setToRed(1,7)" onclick="setToBlue(1,7)">Défi 7</td>
-        </tr>
-        <tr id="row2" class="bingo-row">
-            <td id="cell21" class="incomplete" oncontextmenu="setToRed(2,1)" onclick="setToBlue(2,1)">Défi 1</td>
-            <td id="cell22" class="incomplete" oncontextmenu="setToRed(2,2)" onclick="setToBlue(2,2)">Défi 2</td>
-            <td id="cell23" class="incomplete" oncontextmenu="setToRed(2,3)" onclick="setToBlue(2,3)">Défi 3</td>
-            <td id="cell24" class="incomplete" oncontextmenu="setToRed(2,4)" onclick="setToBlue(2,4)">Défi 4</td>
-            <td id="cell25" class="incomplete" oncontextmenu="setToRed(2,5)" onclick="setToBlue(2,5)">Défi 5</td>
-            <td id="cell26" class="incomplete" oncontextmenu="setToRed(2,6)" onclick="setToBlue(2,6)">Défi 6</td>
-            <td id="cell27" class="incomplete" oncontextmenu="setToRed(2,7)" onclick="setToBlue(2,7)">Défi 7</td>
-        </tr>
-        <tr id="row3" class="bingo-row">
-            <td id="cell31" class="incomplete" oncontextmenu="setToRed(3,1)" onclick="setToBlue(3,1)">Défi 1</td>
-            <td id="cell32" class="incomplete" oncontextmenu="setToRed(3,2)" onclick="setToBlue(3,2)">Défi 2</td>
-            <td id="cell33" class="incomplete" oncontextmenu="setToRed(3,3)" onclick="setToBlue(3,3)">Défi 3</td>
-            <td id="cell34" class="incomplete" oncontextmenu="setToRed(3,4)" onclick="setToBlue(3,4)">Défi 4</td>
-            <td id="cell35" class="incomplete" oncontextmenu="setToRed(3,5)" onclick="setToBlue(3,5)">Défi 5</td>
-            <td id="cell36" class="incomplete" oncontextmenu="setToRed(3,6)" onclick="setToBlue(3,6)">Défi 6</td>
-            <td id="cell37" class="incomplete" oncontextmenu="setToRed(3,7)" onclick="setToBlue(3,7)">Défi 7</td>
-        </tr>
-        <tr id="row4" class="bingo-row">
-            <td id="cell41" class="incomplete" oncontextmenu="setToRed(4,1)" onclick="setToBlue(4,1)">Défi 1</td>
-            <td id="cell42" class="incomplete" oncontextmenu="setToRed(4,2)" onclick="setToBlue(4,2)">Défi 2</td>
-            <td id="cell43" class="incomplete" oncontextmenu="setToRed(4,3)" onclick="setToBlue(4,3)">Défi 3</td>
-            <td id="cell44" class="incomplete" oncontextmenu="setToRed(4,4)" onclick="setToBlue(4,4)">Défi 4</td>
-            <td id="cell45" class="incomplete" oncontextmenu="setToRed(4,5)" onclick="setToBlue(4,5)">Défi 5</td>
-            <td id="cell46" class="incomplete" oncontextmenu="setToRed(4,6)" onclick="setToBlue(4,6)">Défi 6</td>
-            <td id="cell47" class="incomplete" oncontextmenu="setToRed(4,7)" onclick="setToBlue(4,7)">Défi 7</td>
-        </tr>
-        <tr id="row5" class="bingo-row">
-            <td id="cell51" class="incomplete" oncontextmenu="setToRed(5,1)" onclick="setToBlue(5,1)">Défi 1</td>
-            <td id="cell52" class="incomplete" oncontextmenu="setToRed(5,2)" onclick="setToBlue(5,2)">Défi 2</td>
-            <td id="cell53" class="incomplete" oncontextmenu="setToRed(5,3)" onclick="setToBlue(5,3)">Défi 3</td>
-            <td id="cell54" class="incomplete" oncontextmenu="setToRed(5,4)" onclick="setToBlue(5,4)">Défi 4</td>
-            <td id="cell55" class="incomplete" oncontextmenu="setToRed(5,5)" onclick="setToBlue(5,5)">Défi 5</td>
-            <td id="cell56" class="incomplete" oncontextmenu="setToRed(5,6)" onclick="setToBlue(5,6)">Défi 6</td>
-            <td id="cell57" class="incomplete" oncontextmenu="setToRed(5,7)" onclick="setToBlue(5,7)">Défi 7</td>
-        </tr>
-        <tr id="row6" class="bingo-row">
-            <td id="cell61" class="incomplete" oncontextmenu="setToRed(6,1)" onclick="setToBlue(6,1)">Défi 1</td>
-            <td id="cell62" class="incomplete" oncontextmenu="setToRed(6,2)" onclick="setToBlue(6,2)">Défi 2</td>
-            <td id="cell63" class="incomplete" oncontextmenu="setToRed(6,3)" onclick="setToBlue(6,3)">Défi 3</td>
-            <td id="cell64" class="incomplete" oncontextmenu="setToRed(6,4)" onclick="setToBlue(6,4)">Défi 4</td>
-            <td id="cell65" class="incomplete" oncontextmenu="setToRed(6,5)" onclick="setToBlue(6,5)">Défi 5</td>
-            <td id="cell66" class="incomplete" oncontextmenu="setToRed(6,6)" onclick="setToBlue(6,6)">Défi 6</td>
-            <td id="cell67" class="incomplete" oncontextmenu="setToRed(6,7)" onclick="setToBlue(6,7)">Défi 7</td>
-        </tr>
-        <tr id="row7" class="bingo-row">
-            <td id="cell71" class="incomplete" oncontextmenu="setToRed(7,1)" onclick="setToBlue(7,1)">Défi 1</td>
-            <td id="cell72" class="incomplete" oncontextmenu="setToRed(7,2)" onclick="setToBlue(7,2)">Défi 2</td>
-            <td id="cell73" class="incomplete" oncontextmenu="setToRed(7,3)" onclick="setToBlue(7,3)">Défi 3</td>
-            <td id="cell74" class="incomplete" oncontextmenu="setToRed(7,4)" onclick="setToBlue(7,4)">Défi 4</td>
-            <td id="cell75" class="incomplete" oncontextmenu="setToRed(7,5)" onclick="setToBlue(7,5)">Défi 5</td>
-            <td id="cell76" class="incomplete" oncontextmenu="setToRed(7,6)" onclick="setToBlue(7,6)">Défi 6</td>
-            <td id="cell77" class="incomplete" oncontextmenu="setToRed(7,7)" onclick="setToBlue(7,7)">Défi 7</td>
-        </tr>
-        </table>
+        
         <div class="team-red" id="red-info">
             <h2 id="red-cells">Vodka : 0</h2>
             <h2 id="red-bingos">Famines Générales : 0</h2>
@@ -137,7 +50,101 @@
                 </div>
             </div>
         </div>
+        <table id="bingo-board" oncontextmenu="return false;">
+        <tr id="row1" class="bingo-row">
+            <td id="cell11" class="incomplete" oncontextmenu="setToBlue(1,1)" onclick="setToRed(1,1)">Faire 5 tresses à Martha la poupée</td>
+            <td id="cell12" class="incomplete" oncontextmenu="setToBlue(1,2)" onclick="setToRed(1,2)">Déneiger 3 autos</td>
+            <td id="cell13" class="incomplete" oncontextmenu="setToBlue(1,3)" onclick="setToRed(1,3)">Prendre 3 selfies avec 3 boîtes d'oeuf différentes à 3 endroits différents</td>
+            <td id="cell14" class="incomplete" oncontextmenu="setToBlue(1,4)" onclick="setToRed(1,4)">Gagner une course de chevaux</td>
+            <td id="cell15" class="incomplete" oncontextmenu="setToBlue(1,5)" onclick="setToRed(1,5)">Marathon Wikipédia<br>Pikachu -> Poivron -> Linux -> Joseph-François Perrault</td>
+            <td id="cell16" class="incomplete" oncontextmenu="setToBlue(1,6)" onclick="setToRed(1,6)">Faire au moins 1 biscuit</td>
+            <td id="cell17" class="incomplete" oncontextmenu="setToBlue(1,7)" onclick="setToRed(1,7)">Lire la première page de la bible en Japonais</td>
+        </tr>
+        <tr id="row2" class="bingo-row">
+            <td id="cell21" class="incomplete" oncontextmenu="setToBlue(2,1)" onclick="setToRed(2,1)">Aiguiser 3 crayons jusqu'à ce qu'il n'en reste plus rien</td>
+            <td id="cell22" class="incomplete" oncontextmenu="setToBlue(2,2)" onclick="setToRed(2,2)">Boire 2 litres d'eau</td>
+            <td id="cell23" class="incomplete" oncontextmenu="setToBlue(2,3)" onclick="setToRed(2,3)">Trouver le mot "anthropologie" dans n'importe quel livre</td>
+            <td id="cell24" class="incomplete" oncontextmenu="setToBlue(2,4)" onclick="setToRed(2,4)">Lancer un oeuf du blacon sans qu'il se casse</td>
+            <td id="cell25" class="incomplete" oncontextmenu="setToBlue(2,5)" onclick="setToRed(2,5)">Compter 500 grains de riz</td>
+            <td id="cell26" class="incomplete" oncontextmenu="setToBlue(2,6)" onclick="setToRed(2,6)">Atteindre 25k de population dans CivClicker</td>
+            <td id="cell27" class="incomplete" oncontextmenu="setToBlue(2,7)" onclick="setToRed(2,7)">Trouver une vidéo de Radio-Canada à partir d'un nouveau compte YouTube</td>
+        </tr>
+        <tr id="row3" class="bingo-row">
+            <td id="cell31" class="incomplete" oncontextmenu="setToBlue(3,1)" onclick="setToRed(3,1)">Écrire un courriel à un prof et obtenir une réponse</td>
+            <td id="cell32" class="incomplete" oncontextmenu="setToBlue(3,2)" onclick="setToRed(3,2)">Télécharger 100 photos de Jean-Coutu</td>
+            <td id="cell33" class="incomplete" oncontextmenu="setToBlue(3,3)" onclick="setToRed(3,3)">Fixer un chronomètre pendant 5 minutes</td>
+            <td id="cell34" class="incomplete" oncontextmenu="setToBlue(3,4)" onclick="setToRed(3,4)">Monter à plus de 150 mètres d'altitude</td>
+            <td id="cell35" class="incomplete" oncontextmenu="setToBlue(3,5)" onclick="setToRed(3,5)">Construire un KUBE en lego d'au moins 20x10x10</td>
+            <td id="cell36" class="incomplete" oncontextmenu="setToBlue(3,6)" onclick="setToRed(3,6)">Battre chatGPT aux échecs (s'il dit qu'il fait un coup illégal, il le fait)</td>
+            <td id="cell37" class="incomplete" oncontextmenu="setToBlue(3,7)" onclick="setToRed(3,7)">Imprimer un mandala et le colorier (au moins 25 zones, aucune couleur se touchent)</td>
+        </tr>
+        <tr id="row4" class="bingo-row">
+            <td id="cell41" class="incomplete" oncontextmenu="setToBlue(4,1)" onclick="setToRed(4,1)">Finir Fingerdash en mode pratique (pas de checkpoints manuels)</td>
+            <td id="cell42" class="incomplete" oncontextmenu="setToBlue(4,2)" onclick="setToRed(4,2)">Faire un portail du Nether dans une survie Minecraft</td>
+            <td id="cell43" class="incomplete" oncontextmenu="setToBlue(4,3)" onclick="setToRed(4,3)">Avoir 10,000 pops sur popcat.click</td>
+            <td id="cell44" class="incomplete" oncontextmenu="setToBlue(4,4)" onclick="setToRed(4,4)">Se rendre à la règle 21 sur le password Game</td>
+            <td id="cell45" class="incomplete" oncontextmenu="setToBlue(4,5)" onclick="setToRed(4,5)">Faire 10 avions en papier et 5 bateaux</td>
+            <td id="cell46" class="incomplete" oncontextmenu="setToBlue(4,6)" onclick="setToRed(4,6)">Arrêter un timer de 1 minutes à 2.5 secondes près en fermant les yeux</td>
+            <td id="cell47" class="incomplete" oncontextmenu="setToBlue(4,7)" onclick="setToRed(4,7)">Réussir un quiz random sur Sporcle avec 100% (quiz d'au moins 10 quesitons)</td>
+        </tr>
+        <tr id="row5" class="bingo-row">
+            <td id="cell51" class="incomplete" oncontextmenu="setToBlue(5,1)" onclick="setToRed(5,1)">Écouter et laisser un commentaire sur toutes les vidéos de Dominique Sacy</td>
+            <td id="cell52" class="incomplete" oncontextmenu="setToBlue(5,2)" onclick="setToRed(5,2)">Faire une tour de choses qui atteint le plafond à partir du sol</td>
+            <td id="cell53" class="incomplete" oncontextmenu="setToBlue(5,3)" onclick="setToRed(5,3)">Finir la pile des "craquelins"</td>
+            <td id="cell54" class="incomplete" oncontextmenu="setToBlue(5,4)" onclick="setToRed(5,4)">Libérer un Tie Wrap d'un cadenas</td>
+            <td id="cell55" class="incomplete" oncontextmenu="setToBlue(5,5)" onclick="setToRed(5,5)">Faire signer LE contrat à n'importe qui (ne peut pas être quelqu'un ici)</td>
+            <td id="cell56" class="incomplete" oncontextmenu="setToBlue(5,6)" onclick="setToRed(5,6)">Faire une scultupre de glace en forme d'étoile</td>
+            <td id="cell57" class="incomplete" oncontextmenu="setToBlue(5,7)" onclick="setToRed(5,7)">Faire 1 kill sur Fortnite</td>
+        </tr>
+        <tr id="row6" class="bingo-row">
+            <td id="cell61" class="incomplete" oncontextmenu="setToBlue(6,1)" onclick="setToRed(6,1)">Couper une clémentine en 2 parfaitement (à 0.1 grammes près)</td>
+            <td id="cell62" class="incomplete" oncontextmenu="setToBlue(6,2)" onclick="setToRed(6,2)">Vider un bol d'eau des guenilles en ramassant TOUTES les gouttes qui tombent</td>
+            <td id="cell63" class="incomplete" oncontextmenu="setToBlue(6,3)" onclick="setToRed(6,3)">Atteindre les enfers dans Terraria</td>
+            <td id="cell64" class="incomplete" oncontextmenu="setToBlue(6,4)" onclick="setToRed(6,4)">Gagner 3 parties de Rumble Rush</td>
+            <td id="cell65" class="incomplete" oncontextmenu="setToBlue(6,5)" onclick="setToRed(6,5)">Convaincre l'autre équipe de vous donner cette case</td>
+            <td id="cell66" class="incomplete" oncontextmenu="setToBlue(6,6)" onclick="setToRed(6,6)">Faire 3 expériences au hasard parmi les "Petites Expériences Scientifiques"</td>
+            <td id="cell67" class="incomplete" oncontextmenu="setToBlue(6,7)" onclick="setToRed(6,7)">Tenir sur une jambe pour 3 minutes</td>
+        </tr>
+        <tr id="row7" class="bingo-row">
+            <td id="cell71" class="incomplete" oncontextmenu="setToBlue(7,1)" onclick="setToRed(7,1)">Battre Garfield's Scary Scavenger Hunt</td>
+            <td id="cell72" class="incomplete" oncontextmenu="setToBlue(7,2)" onclick="setToRed(7,2)">Premier à faire deviner les 26 mimes de chatGPT</td>
+            <td id="cell73" class="incomplete" oncontextmenu="setToBlue(7,3)" onclick="setToRed(7,3)">Dessiner le leader de ton équipe et obtient une note de 10/10</td>
+            <td id="cell74" class="incomplete" oncontextmenu="setToBlue(7,4)" onclick="setToRed(7,4)">Réussir un examen d'Histoire de sec1 avec 75% ou plus</td>
+            <td id="cell75" class="incomplete" oncontextmenu="setToBlue(7,5)" onclick="setToRed(7,5)">Apprendre par coeur une publicité que tu vois sur youtube</td>
+            <td id="cell76" class="incomplete" oncontextmenu="setToBlue(7,6)" onclick="setToRed(7,6)">Tuer un insecte (2x plus de points si c'est un autre animal)</td>
+            <td id="cell77" class="incomplete" oncontextmenu="setToBlue(7,7)" onclick="setToRed(7,7)">Acheter une bague pour 10$ ou moins</td>
+        </tr>
+        </table>
+        <div class="team-blue" id="blue-info">
+            <h2 id="blue-cells">Pretzels : 0</h2>
+            <h2 id="blue-bingos">Camps de Concentration : 0</h2>
+            <br>
+            <div class="bingo-images1">
+                <img src="./lockedBingo.png" height="150px" width="150px" class="bingo-image" id="blue-leader1">
+                <img src="./lockedBingo.png" height="150px" width="150px" class="bingo-image" id="blue-leader2">
+                <img src="./lockedBingo.png" height="150px" width="150px" class="bingo-image" id="blue-leader3">
+                </div>
+                <div class="bingo-images2">
+                <img src="./lockedBingo.png" height="200px" width="200px" class="bingo-image" id="blue-leader4">
+                <img src="./lockedBingo.png" height="200px" width="200px" class="bingo-image" id="blue-leader5">
+            </div>
+            <h1 id="objective-blue">Gagnez en obtenant 5 leaders</h1>
+            <p id="explain-objective-blue">Vous obtenez 1 leader chaque fois que vous alignez 3 cases en ligne (chaque fois que vous avez un bingo)</p>
+            <div class="bingo-images2">
+                <div id="blue-territory1">
+                <img src="./tieBreaker1.png" height="100px" width="100px" class="bingo-image">
+                </div>
+                <div id="blue-territory2">
+                <img src="./tieBreaker2.png" height="100px" width="100px" class="bingo-image">
+                </div>
+            </div>
+        </div>
     </div>
+    <audio src="./erika.mp3" id="erika"></audio>
+    <audio src="./ussr.mp3" id="ussr"></audio>
+    <audio src="./win1.mp3" id="win1"></audio>
+    <audio src="./win2.mp3" id="win2"></audio>
+    <audio src="./win3.mp3" id="win3"></audio>
 </body>
 <style>
     .bingo-images1 {
@@ -184,6 +191,8 @@
         width: 100px;
         height: 100px;
         text-align: center;
+        font-size: small;
+        mix-blend-mode: multiply;
     }
 
     #teams {

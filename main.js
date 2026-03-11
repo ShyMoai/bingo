@@ -12,6 +12,7 @@ function setToBlue(r,c) {
     blueCells ++ //increase the total amount of blue cells
     }
     updateElements()
+    playWinSound()
 }
 function setToRed(r,c) {
     targetCell = "cell" + r + c
@@ -22,6 +23,7 @@ function setToRed(r,c) {
     redCells ++
     }
     updateElements()
+    playWinSound()
 }
 function updateArray(color,r,c) {
     cellPosition = (r-1)*7 + (c-1) //tranforms the coordinates (rows and collumns) to an array position
@@ -177,8 +179,7 @@ function updateElements() {
             document.getElementById("blue-territory2").style.backgroundColor = "rgba(0, 0, 255, 0.7)"
             document.getElementById("red-territory1").style.backgroundColor = "rgba(100, 100, 100, 0.7)"
             document.getElementById("red-territory2").style.backgroundColor = "rgba(100, 100, 100, 0.7)"
-            console.log("BLUE TEAM WINS")
-            document.getElementById("buddy").style.backgroundColor = "rgb(0, 0, 255)"
+            blueTeamWins()
         } else if (blueLead == -1) {
             document.getElementById("blue-territory1").style.backgroundColor = "rgba(100, 100, 100, 0.7)"
             document.getElementById("blue-territory2").style.backgroundColor = "rgba(100, 100, 100, 0.7)"
@@ -189,8 +190,7 @@ function updateElements() {
             document.getElementById("blue-territory2").style.backgroundColor = "rgba(100, 100, 100, 0.7)"
             document.getElementById("red-territory1").style.backgroundColor = "rgba(255, 0, 0, 0.7)"
             document.getElementById("red-territory2").style.backgroundColor = "rgba(255, 0, 0, 0.7)"
-            console.log("RED TEAM WINS")
-            document.getElementById("buddy").style.backgroundColor = "rgb(255, 0, 0)"
+            redTeamWins()
         }
     }
     document.getElementById("blue-leader1").src = "./lockedBingo.png"
@@ -213,8 +213,7 @@ function updateElements() {
     if (blueBingos >= 5) {
         document.getElementById("blue-leader5").src = "./blueBingo5.jpg"
         if (redBingos < 4) {
-            console.log("BLUE TEAM WINS")
-            document.getElementById("buddy").style.backgroundColor = "rgb(0, 0, 255)"
+            blueTeamWins()
         }
     }
     document.getElementById("red-leader1").src = "./lockedBingo.png"
@@ -236,9 +235,40 @@ function updateElements() {
     }
     if (redBingos >= 5) {
         document.getElementById("red-leader5").src = "./redBingo5.jpg"
-        if (redBingos < 4) {
-            console.log("RED TEAM WINS")
-            document.getElementById("buddy").style.backgroundColor = "rgb(255, 0, 0)"
+        if (blueBingos < 4) {
+            redTeamWins()
         }
+    }
+}
+function blueTeamWins() {
+    console.log("BLUE TEAM WINS")
+    document.getElementById("buddy").style.backgroundColor = "rgb(0, 0, 255)"
+    document.getElementById("erika").play()
+}
+function redTeamWins() {
+    console.log("RED TEAM WINS")
+    document.getElementById("buddy").style.backgroundColor = "rgb(255, 0, 0)"
+    document.getElementById("ussr").play()
+}
+function playWinSound() {
+    var winSoundPlayed = Math.floor(Math.random()*3)
+    if (winSoundPlayed == 0) {
+        document.getElementById("win1").play()
+        setTimeout(() => {
+    document.getElementById("win1").pause();
+    document.getElementById("win1").currentTime = 0;
+}, 10000);
+    } else if (winSoundPlayed == 1) {
+        document.getElementById("win2").play()
+        setTimeout(() => {
+    document.getElementById("win2").pause();
+    document.getElementById("win2").currentTime = 0;
+}, 10000);
+    } else {
+        document.getElementById("win3").play()
+        setTimeout(() => {
+    document.getElementById("win3").pause();
+    document.getElementById("win3").currentTime = 0;
+}, 10000);
     }
 }
