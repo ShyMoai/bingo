@@ -10,9 +10,9 @@ function setToBlue(r,c) {
     updateArray("blue",r,c) //update the array
     checkForBingos("blue")
     blueCells ++ //increase the total amount of blue cells
+    playWinSound()
     }
     updateElements()
-    playWinSound()
 }
 function setToRed(r,c) {
     targetCell = "cell" + r + c
@@ -21,9 +21,9 @@ function setToRed(r,c) {
     updateArray("red",r,c)
     checkForBingos("red")
     redCells ++
+    playWinSound()
     }
     updateElements()
-    playWinSound()
 }
 function updateArray(color,r,c) {
     cellPosition = (r-1)*7 + (c-1) //tranforms the coordinates (rows and collumns) to an array position
@@ -272,3 +272,4 @@ function playWinSound() {
 }, 10000);
     }
 }
+
